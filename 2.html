@@ -23,20 +23,34 @@
     }
 
     ol {
-      border-right: 1px solid gray;
+      border-right: none;
       width: 100px;
       margin: 0;
       padding: 20px;
     }
+
     #grid {
-      display:grid;
-      grid-template-columns: 150px 1fr;;
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      ;
     }
+
     #grid ol {
       padding-left: 33px;
     }
-    #article {
+
+    #grid article {
       padding: 25px;
+    }
+
+    @media(max-width:800px) {
+      #grid {
+        display: block;
+      }
+
+      h1 {
+        border-bottom: none;
+      }
     }
   </style>
 </head>
@@ -68,4 +82,5 @@
     </div>
   </div>
 </body>
+
 </html>
